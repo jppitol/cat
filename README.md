@@ -1,5 +1,7 @@
 # cat
 
+## WORK IN PROGRESS
+
 Objetivo do projeto: recriar o comando de terminal cat utilizando a linguagem C.
 
 Flags:
