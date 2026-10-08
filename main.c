@@ -8,14 +8,18 @@ int readfile_flagless(char filename[]) {
     if (f == NULL) {
         return -1;
     }
-    
+
+    char c;
+    while ( (c = getc(f)) != EOF ) {
+        printf("%c", c);
+    }
     
 }
 
 int main(int argc, char *argv[]) {
     switch (argc) {
         case 1:
-            printf("ERRO! Uso correto do comando: ./cat [arquivo]");
+            printf("ERROR! Try ./cat [file]");
             return 0;
         case 2:
             readfile_flagless(argv[1]);
